@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="SystemReportFormContext" prefHeight="856.0" prefWidth="1678.0" styleClass="dashboard" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+   <children>
+      <AnchorPane fx:id="SystemReportButtonContext" layoutX="15.0" layoutY="14.0" prefHeight="140.0" prefWidth="1642.0" styleClass="textPane">
+         <children>
+            <HBox layoutX="23.0" layoutY="22.0" prefHeight="96.0" prefWidth="1596.0">
+               <children>
+                  <JFXButton onAction="#DailyReportOnAction" prefHeight="96.0" prefWidth="532.0" styleClass="selectButton1" text="   Daily Report" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+                  <JFXButton onAction="#MonthlyReportOnAction" prefHeight="96.0" prefWidth="532.0" styleClass="selectButton2" text="   Monthly Report" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+                  <JFXButton onAction="#AnnuallyReportOnAction" prefHeight="96.0" prefWidth="532.0" styleClass="selectButton3" text="   Annualy Report" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ReportTableContext" layoutX="15.0" layoutY="172.0" prefHeight="670.0" prefWidth="1642.0" stylesheets="@../assets/style/Dashboard.css">
+         <children>
+            <AnchorPane layoutX="79.0" layoutY="51.0" prefHeight="168.0" prefWidth="284.0" styleClass="label1">
+               <children>
+                  <Label fx:id="lblItem" layoutX="123.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="20.0" text="ITEMS ">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="457.0" layoutY="51.0" prefHeight="168.0" prefWidth="284.0" styleClass="label2">
+               <children>
+                  <Label fx:id="lblCustomer" layoutX="126.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="20.0" text="CUSTOMERS">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="828.0" layoutY="51.0" prefHeight="168.0" prefWidth="284.0" styleClass="label3">
+               <children>
+                  <Label fx:id="lblOrders" layoutX="130.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="20.0" text="ORDERS">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1217.0" layoutY="51.0" prefHeight="168.0" prefWidth="284.0" styleClass="label4">
+               <children>
+                  <Label fx:id="lblSoldItems" layoutX="132.0" layoutY="84.0" prefHeight="70.0" prefWidth="120.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="20.0" text="SOLD ITEMS">
+                     <font>
+                        <Font name="Agency FB Bold" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="79.0" layoutY="298.0" prefHeight="308.0" prefWidth="462.0" styleClass="MPaneA">
+               <children>
+                  <TableView fx:id="tblMostSoldItem" layoutX="19.0" layoutY="78.0" prefHeight="200.0" prefWidth="425.0">
+                    <columns>
+                      <TableColumn fx:id="colMCode" prefWidth="75.0" text="Item Code" />
+                      <TableColumn fx:id="colMName" prefWidth="75.0" text="Item Name" />
+                        <TableColumn fx:id="colMOrderQty" prefWidth="75.0" text="Sold Qty" />
+                        <TableColumn fx:id="colMUnitPrice" prefWidth="75.0" text="Unit Price" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Text layoutX="119.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most Sold Item">
+                     <font>
+                        <Font name="Agency FB Bold" size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1112.0" layoutY="298.0" prefHeight="308.0" prefWidth="462.0" styleClass="MPaneA">
+               <children>
+                  <TableView fx:id="tblLeastSoldItem" layoutX="19.0" layoutY="78.0" prefHeight="200.0" prefWidth="425.0">
+                     <columns>
+                        <TableColumn fx:id="colICode" prefWidth="75.0" text="Item Code" />
+                        <TableColumn fx:id="colIName" prefWidth="75.0" text="Item Name" />
+                        <TableColumn fx:id="colIOrderQty" prefWidth="75.0" text="Sold Qty" />
+                        <TableColumn fx:id="colIUnitPrice" prefWidth="75.0" text="Unit Price" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Text layoutX="119.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Least Sold Item">
+                     <font>
+                        <Font name="Agency FB Bold" size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="599.0" layoutY="298.0" prefHeight="308.0" prefWidth="462.0" styleClass="MPaneA">
+               <children>
+                  <TableView fx:id="tblAllItem" layoutX="19.0" layoutY="78.0" prefHeight="200.0" prefWidth="425.0">
+                     <columns>
+                        <TableColumn fx:id="colCode" prefWidth="75.0" text="Item Code" />
+                        <TableColumn fx:id="colName" prefWidth="75.0" text="Item Name" />
+                        <TableColumn fx:id="colSoldQty" prefWidth="75.0" text="Sold Qty" />
+                        <TableColumn fx:id="colUnitPrice" prefWidth="75.0" text="Unit Price" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Text layoutX="165.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Sold Item">
+                     <font>
+                        <Font name="Agency FB Bold" size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+.MPane{
+    -fx-background-color:linear-gradient(to right,rgba(255, 255, 255,1.0),rgba(47, 53, 66,1.0));
+}
+.pane{
+    -fx-background-color:linear-gradient(to right,rgba(235, 59, 90,1.0),rgb(47, 53, 66));
+}
+ .text1{
+     -fx-font-size: 19;
+     -fx-font-family: "Times New Roman";
+     -fx-fill: #c0392b ;
+     -fx-font-weight: bold;
+ }
+
+.text2{
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+    -fx-fill: #341f97 ;
+    -fx-font-weight: bold;
+}
+
+.text3{
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+    -fx-fill: #5f27cd ;
+    -fx-font-weight: bold;
+}
+
+.textHeadLine{
+    -fx-font-size: 30;
+    -fx-font-family: "Times New Roman";
+    -fx-fill: #2c3e50 ;
+    -fx-font-weight: bold;
+}

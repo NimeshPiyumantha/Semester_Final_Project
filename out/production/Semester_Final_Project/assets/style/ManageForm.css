@@ -1,0 +1,233 @@
+.dashboard {
+    -fx-background-color: linear-gradient(to right, rgba(116, 125, 140, 1.0), rgba(206, 214, 224, 1.0));
+}
+
+.MPaneA {
+    -fx-background-color: #778ca3;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(47, 53, 66, 1.0) ;
+    -fx-border-width: 3;
+}
+
+.anchorePane {
+    -fx-background-color: linear-gradient(to right, rgba(47, 53, 66, 1.0), rgba(235, 59, 90, 1.0));
+
+}
+
+.anchorPane3 {
+    -fx-background-color: rgba(47, 53, 66, 1.0);
+    -fx-border-width: 1;
+    -fx-border-color: rgba(255, 255, 255, 1.0);
+}
+
+.anchorePane1 {
+    -fx-background-color: linear-gradient(to Right top, #8D8F91, #3C3F41);
+    -fx-border-radius: 30;
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 1.0);
+
+}
+
+.tTextPane {
+    -fx-background-color: linear-gradient(to right, rgba(116, 125, 140, 1.0), rgba(206, 214, 224, 1.0));
+    -fx-border-color: linear-gradient(to right, rgba(47, 53, 66, 1.0), rgba(255, 71, 87, 1.0));
+    -fx-border-width: 4;
+    -fx-opacity: 0.9;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+
+}
+
+.AddBtn {
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(255, 215, 10);;
+    -fx-font-size: 20;
+    -fx-text-fill: #000000;
+}
+
+.SaveBtn {
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(48, 209, 88);;
+    -fx-font-size: 20;
+    -fx-text-fill: #000000;
+}
+
+.CancelBtn {
+    -fx-font-weight: bold;
+    -fx-background-color: rgb(255, 55, 95);
+    -fx-font-size: 20;
+    -fx-text-fill: #000000;
+}
+
+.textPaneOrder {
+    -fx-background-color: #6ab04c ;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+    -fx-opacity:0.84;
+}
+
+.textPaneMain {
+    -fx-background-color:linear-gradient(to right bottom,#ced6e0,#a4b0be,#57606f);
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+    -fx-opacity:0.89;
+}
+
+.textPane {
+    -fx-background-color: #f1f2f6;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+    -fx-opacity:0.80;
+}
+
+.loadAnchorePane {
+    -fx-background-color: linear-gradient(to right, rgb(143, 182, 197), rgb(255, 55, 95));
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+}
+
+.searchPane{
+    -fx-background-color:  #f1f2f6;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 3px;
+}
+
+.textPane1 {
+    -fx-background-color: #f1f2f6;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+
+.selectButton1 {
+    -fx-background-color: #16a085;
+    -fx-text-fill: #1e272e;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 26;
+}
+
+.selectButton2 {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: #1e272e;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 26;
+}
+
+.selectButton3 {
+    -fx-background-color: #9b59b6;
+    -fx-text-fill: #1e272e;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 26;
+}
+
+.selectButton4 {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: #1e272e;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 26;
+}
+
+.selectButton5 {
+    -fx-background-color:#1dd1a1;
+    -fx-text-fill: #1e272e;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 26;
+}
+
+.textField {
+    -fx-background-color: #f1f2f6;
+    -fx-prompt-text-fill: #726d6d;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+}
+.PANE{
+    -fx-background-color:#7bed9f;
+    -fx-background-radius: 25;
+}
+.textLabel {
+    -fx-background-color: #f1f2f6;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);
+    -fx-font-size: 14;
+}
+
+.textPane11{
+    -fx-background-color: #6ab04c;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+.textField11{
+    -fx-background-color: #6ab04c;
+    -fx-prompt-text-fill: #726d6d;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+
+}
+.textLabel1{
+    -fx-background-color: #6ab04c;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);
+    -fx-font-size: 14;
+}
+
+/*Table Styles Start*/
+.table-view:focused {
+    -fx-background-insets: 1px;
+}
+
+.table-view .column-header {
+    -fx-size: 40px;
+    -fx-background-color: #34495e;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill:#f1f2f6;
+}
+
+.table-view .table-row-cell:empty {
+    -fx-background-color:#f1f2f6;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right,#eb3b5a , #d1d8e0);
+}
+
+.table-view .table-row-cell:selected * {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+.transparent {
+    -fx-opacity:0.80;
+}
+
+.border {
+    -fx-border-color: #2f4f4f;
+    -fx-border-width: 1.5;
+}
+
+

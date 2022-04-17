@@ -1,0 +1,60 @@
+.anchorPane1{
+    -fx-background-color:linear-gradient(to right,rgba(47, 53, 66,1.0),rgba(235, 59, 90,1.0));
+}
+
+.anchorPane2{
+    -fx-background-color: rgba(47, 53, 66,1.0);
+}
+.anchorPane3{
+    -fx-background-color: rgba(47, 53, 66,1.0);
+    -fx-border-width: 1;
+    -fx-border-color: rgba(255, 255, 255,1.0);
+}
+
+.btn1{
+    -fx-background-color:linear-gradient(to right,rgba(255, 255, 255,1.0),rgba(235, 59, 90,1.0));
+    -fx-font-size: 24;
+    -fx-font-family: "Berlin Sans FB Demi";
+    -fx-background-radius: 20;
+    -fx-border-radius: 25;
+    -fx-fill: #2f3640;
+    -fx-font-weight: bold;
+}
+.btnMenu{
+    -fx-background-color: #eb3b5a;
+}
+.dashboard{
+    -fx-background-color:linear-gradient(to right,rgba(255, 255, 255,1.0),rgba(47, 53, 66,1.0));
+}
+.label1{
+    -fx-background-color:#ff7979 ;
+    -fx-background-radius: 25;
+    -fx-border-color: #222f3e;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+}
+
+.label2{
+    -fx-background-color:#38ada9 ;
+    -fx-background-radius: 25;
+    -fx-border-color: #222f3e;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+}
+
+.label3{
+    -fx-background-color:#78e08f ;
+    -fx-background-radius: 25;
+    -fx-border-color: #222f3e;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+}
+
+.label4{
+    -fx-background-color:#60a3bc ;
+    -fx-background-radius: 25;
+    -fx-border-color: #222f3e;
+    -fx-border-width: 2;
+    -fx-border-radius: 25;
+}
+

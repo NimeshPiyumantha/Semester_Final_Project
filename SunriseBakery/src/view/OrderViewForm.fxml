@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OrderViewFormContext" prefHeight="856.0" prefWidth="1678.0" styleClass="dashboard" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderViewFormController">
+   <children>
+      <AnchorPane fx:id="ViewDetailButtonContext" layoutX="280.0" layoutY="14.0" prefHeight="140.0" prefWidth="1113.0" styleClass="textPane">
+         <children>
+            <HBox layoutX="23.0" layoutY="22.0" prefHeight="96.0" prefWidth="1062.0">
+               <children>
+                  <JFXButton onAction="#OrdersOnAction" prefHeight="96.0" prefWidth="532.0" styleClass="selectButton4" text="Orders" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/icons/cargo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton onAction="#OrderDetailsOnAction" prefHeight="96.0" prefWidth="532.0" styleClass="selectButton5" text="Order Details " textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="26.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/orderV.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ViewDetailTableContext" layoutX="18.0" layoutY="164.0" prefHeight="670.0" prefWidth="1642.0">
+         <children>
+            <ImageView fx:id="imgOrders" fitHeight="304.0" fitWidth="304.0" layoutX="282.0" layoutY="108.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/cargo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgIOrderDetails" fitHeight="304.0" fitWidth="304.0" layoutX="1048.0" layoutY="108.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons/orderV.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="353.0" layoutY="469.0" prefHeight="82.0" prefWidth="953.0" text="Welcome To  Order Details Form Dashboard" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDescription" alignment="CENTER" layoutX="220.0" layoutY="541.0" prefHeight="20.0" prefWidth="1203.0" text="Please select one of above main operations to proceed">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

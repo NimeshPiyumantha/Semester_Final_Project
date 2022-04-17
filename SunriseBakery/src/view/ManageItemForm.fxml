@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageItemFormContext" prefHeight="856.0" prefWidth="1678.0" styleClass="dashboard" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemFormController">
+   <children>
+      <ImageView fitHeight="856.0" fitWidth="1678.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/item.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="245.0" prefWidth="1636.0" styleClass="textPane">
+         <children>
+            <VBox layoutX="57.0" layoutY="91.0" prefHeight="120.0" prefWidth="325.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtItemCode" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="I-001" styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Item Code" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtUnitPrice" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="70.00" styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Unit Price" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="465.0" layoutY="91.0" prefHeight="120.0" prefWidth="325.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtItemName" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="Muffin" styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Item Name" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtQtyOnHand" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="100" styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Qty On Hand" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="868.0" layoutY="105.0" prefHeight="59.0" prefWidth="325.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtDescription" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="Chocolate " styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Description" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="1254.0" layoutY="81.0" prefHeight="73.0" prefWidth="325.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+                     <children>
+                        <TextField fx:id="txtPackWeight" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="28.0" prefWidth="223.0" promptText="50 g" styleClass="textField" />
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Pack Weight" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="1116.0" layoutY="25.0" onAction="#UpdateItemOnAction" prefHeight="44.0" prefWidth="164.0" styleClass="SaveBtn" text="Update" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="899.0" layoutY="25.0" onAction="#SaveItemOnAction" prefHeight="44.0" prefWidth="175.0" styleClass="AddBtn" text="Save" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="1324.0" layoutY="25.0" onAction="#DeleteItemOnAction" prefHeight="45.0" prefWidth="164.0" styleClass="CancelBtn" text="Delete" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <AnchorPane layoutX="57.0" layoutY="25.0" prefHeight="42.0" prefWidth="260.0" styleClass="textPane1">
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="13.0" layoutY="8.0" onAction="#Search" onKeyReleased="#textFields_Key_Released" prefHeight="32.0" prefWidth="208.0" promptText="I-001" styleClass="textField" />
+                  <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Search" />
+                  <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="221.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblItem" fixedCellSize="0.0" layoutX="14.0" layoutY="278.0" prefHeight="542.0" prefWidth="1636.0" styleClass="tTextPane">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="186.0" text="Item Code" />
+            <TableColumn fx:id="colItemName" prefWidth="169.0" text="Item Name" />
+            <TableColumn fx:id="colDescription" prefWidth="180.0" text="Description" />
+            <TableColumn fx:id="colPackWeight" prefWidth="175.0" text="Pack Weight" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="140.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="169.0" text="Qty On Hand" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="lblTime" layoutX="545.0" layoutY="261.0" opacity="0.0" prefHeight="17.0" prefWidth="236.0" />
+      <Label fx:id="lblDate" layoutX="202.0" layoutY="261.0" opacity="0.0" prefHeight="17.0" prefWidth="208.0" />
+   </children>
+</AnchorPane>

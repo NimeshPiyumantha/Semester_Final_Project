@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="MReportTableContext" prefHeight="670.0" prefWidth="1642.0" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlySystemReportFormController">
+   <children>
+      <ImageView fitHeight="670.0" fitWidth="1642.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/report.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblReport" fixedCellSize="0.0" layoutX="41.0" layoutY="33.0" opacity="0.9" prefHeight="604.0" prefWidth="633.0">
+         <columns>
+            <TableColumn fx:id="colMonth" prefWidth="75.0" text="Month" />
+            <TableColumn fx:id="colOrderCount" prefWidth="75.0" text="Order Count" />
+            <TableColumn fx:id="colItemSoldQty" prefWidth="75.0" text="Item Sold Qty" />
+            <TableColumn fx:id="colCost" prefWidth="75.0" text="Monthly Cost" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane layoutX="690.0" layoutY="33.0" prefHeight="604.0" prefWidth="930.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25;">
+         <children>
+            <AreaChart fx:id="barChart" alternativeColumnFillVisible="true" layoutX="25.0" layoutY="26.0" legendSide="LEFT" prefHeight="553.0" prefWidth="880.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

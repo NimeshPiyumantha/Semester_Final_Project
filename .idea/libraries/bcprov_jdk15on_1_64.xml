@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="bcprov-jdk15on-1.64">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/bcprov-jdk15on-1.64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/castor-core-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/castor-xml-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-lang3-3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/controlsfx-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/ecj-3.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/itext-2.1.7.js8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jackson-annotations-2.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jackson-core-2.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jackson-databind-2.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jasperreports-6.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/javax.inject-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jcommon-1.0.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jfoenix-8.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/jfreechart-1.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SunriseBakery/lib/mysql-connector-java-8.0.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

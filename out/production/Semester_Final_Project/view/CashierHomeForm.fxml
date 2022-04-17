@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HomePane" prefHeight="856.0" prefWidth="1678.0" styleClass="dashboard" stylesheets="@../assets/style/Dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierHomeFormController">
+   <children>
+      <Label fx:id="lblMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="639.0" prefHeight="82.0" prefWidth="953.0" text="Welcome To Cashier Dashboard" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="442.0" layoutY="711.0" prefHeight="20.0" prefWidth="953.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCustomer" fitHeight="284.0" fitWidth="284.0" layoutX="113.0" layoutY="286.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons/addcontact.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOrders" fitHeight="284.0" fitWidth="284.0" layoutX="504.0" layoutY="286.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons/icustomer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDetails" fitHeight="284.0" fitWidth="284.0" layoutX="1278.0" layoutY="286.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons/research.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOrdersView" fitHeight="284.0" fitWidth="284.0" layoutX="874.0" layoutY="286.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons/orderV.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="134.0" layoutY="44.0" prefHeight="168.0" prefWidth="284.0" styleClass="label1">
+         <children>
+            <Label fx:id="lblItem" layoutX="123.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="20.0" text="ITEMS ">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="512.0" layoutY="44.0" prefHeight="168.0" prefWidth="284.0" styleClass="label2">
+         <children>
+            <Label fx:id="lblCustomer" layoutX="126.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="20.0" text="CUSTOMERS">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="883.0" layoutY="44.0" prefHeight="168.0" prefWidth="284.0" styleClass="label3">
+         <children>
+            <Label fx:id="lblOrders" layoutX="130.0" layoutY="84.0" prefHeight="70.0" prefWidth="100.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="20.0" text="ORDERS">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1272.0" layoutY="44.0" prefHeight="168.0" prefWidth="284.0" styleClass="label4">
+         <children>
+            <Label fx:id="lblSoldItems" layoutX="132.0" layoutY="84.0" prefHeight="70.0" prefWidth="120.0" text="2" textAlignment="CENTER">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="20.0" text="SOLD ITEMS">
+               <font>
+                  <Font name="Agency FB Bold" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

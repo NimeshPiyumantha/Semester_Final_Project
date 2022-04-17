@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ManageOrderFormContext" prefHeight="856.0" prefWidth="1678.0" styleClass="dashboard" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderFormController">
+    <children>
+      <ImageView fitHeight="856.0" fitWidth="1678.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/orders.jpg" />
+         </image>
+      </ImageView>
+        <AnchorPane layoutX="15.0" layoutY="14.0" prefHeight="245.0" prefWidth="1636.0" styleClass="textPaneOrder">
+            <children>
+                <JFXComboBox fx:id="cmbCustomerId" labelFloat="true" layoutX="93.0" layoutY="75.0" prefHeight="44.0" prefWidth="184.0" promptText="Customer ID" styleClass="textLabel">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXComboBox>
+                <JFXComboBox fx:id="cmbItemCode" labelFloat="true" layoutX="93.0" layoutY="149.0" prefHeight="44.0" prefWidth="184.0" promptText="Item Code" styleClass="textLabel">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXComboBox>
+                <JFXTextField fx:id="txtName" disable="true" labelFloat="true" layoutX="347.0" layoutY="74.0" prefHeight="44.0" prefWidth="184.0" promptText="Name">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtCity" disable="true" labelFloat="true" layoutX="787.0" layoutY="74.0" prefHeight="44.0" prefWidth="184.0" promptText="City">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtAddress" disable="true" labelFloat="true" layoutX="569.0" layoutY="74.0" prefHeight="44.0" prefWidth="184.0" promptText="Address">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtUnitPrize" disable="true" labelFloat="true" layoutX="787.0" layoutY="149.0" prefHeight="44.0" prefWidth="184.0" promptText="Unit Prize">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtQTYOnHand" disable="true" labelFloat="true" layoutX="569.0" layoutY="149.0" prefHeight="44.0" prefWidth="184.0" promptText="QTY oN Hand">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="txtItemName" disable="true" labelFloat="true" layoutX="347.0" layoutY="149.0" prefHeight="44.0" prefWidth="184.0" promptText="Item Name">
+                    <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                    </font>
+                </JFXTextField>
+            <AnchorPane layoutX="41.0" layoutY="14.0" prefHeight="35.0" prefWidth="211.0" styleClass="PANE">
+               <children>
+                  <Label layoutX="14.0" layoutY="2.0" prefHeight="38.0" prefWidth="114.0" text="Order ID  :- ">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblId" layoutX="114.0" layoutY="2.0" prefHeight="38.0" prefWidth="88.0" text="O-001" textFill="RED">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="839.0" layoutY="22.0" opacity="0.0" prefHeight="25.0" prefWidth="98.0" text="Order Date :-">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="937.0" layoutY="22.0" opacity="0.0" prefHeight="25.0" prefWidth="108.0" text="2021-08-15">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="1167.0" layoutY="22.0" opacity="0.0" prefHeight="25.0" prefWidth="98.0" text="Order Time :-">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1265.0" layoutY="22.0" opacity="0.0" prefHeight="25.0" prefWidth="98.0" text="18:18:30">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="1095.0" layoutY="55.0" prefHeight="61.0" prefWidth="121.0">
+               <children>
+                  <AnchorPane prefHeight="44.0" prefWidth="178.0" styleClass="textPane11">
+                     <children>
+                        <TextField fx:id="txtQTY" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="32.0" prefWidth="88.0" promptText="5" styleClass="textField11">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel1" text="QTY" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="1095.0" layoutY="145.0" prefHeight="61.0" prefWidth="121.0">
+               <children>
+                  <AnchorPane prefHeight="42.0" prefWidth="260.0" styleClass="textPane11">
+                     <children>
+                        <TextField fx:id="txtDiscount" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="32.0" prefWidth="77.0" promptText="4" styleClass="textField11">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel1" text="Discount" />
+                        <Text layoutX="102.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%" wrappingWidth="29.000004649162292">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <JFXButton fx:id="btnAddToCart" layoutX="1380.0" layoutY="66.0" onAction="#addToCartOnAction" prefHeight="61.0" prefWidth="161.0" style="-fx-background-color: #009900; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #222f3e; -fx-border-width: 4;" text="Add To Cart" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRemove" layoutX="1380.0" layoutY="141.0" onAction="#removeBtnOnAction" prefHeight="61.0" prefWidth="161.0" style="-fx-background-color: #ff0000; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #222f3e; -fx-border-width: 4;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tblOrder" fixedCellSize="0.0" layoutX="6.0" layoutY="272.0" prefHeight="506.0" prefWidth="1636.0" styleClass="tTextPane">
+            <columns>
+                <TableColumn fx:id="colOrderId" prefWidth="186.0" text="Order Id" />
+                <TableColumn fx:id="colItemCode" prefWidth="186.0" text="Item Code" />
+                <TableColumn fx:id="colQty" prefWidth="175.0" text="Qty " />
+                <TableColumn fx:id="colUnitPrice" prefWidth="180.0" text="Unit Price" />
+                <TableColumn fx:id="colDiscount" prefWidth="140.0" text="Discount" />
+                <TableColumn fx:id="colTotal" prefWidth="169.0" text="Total" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+      <Pane layoutX="55.0" layoutY="790.0" prefHeight="45.0" prefWidth="138.0" styleClass="tTextPane">
+         <children>
+              <Label alignment="TOP_CENTER" layoutX="20.0" prefHeight="25.0" prefWidth="99.0" text="Total" textFill="#dd0000">
+                  <font>
+                      <Font name="System Bold" size="30.0" />
+                  </font>
+              </Label>
+         </children>
+      </Pane>
+        <Label fx:id="lblTotal" alignment="CENTER" layoutX="204.0" layoutY="790.0" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #222f3e;" text="0.00/=" textFill="#d0d090">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+      <JFXButton fx:id="btnPalaceOrder" layoutX="1457.0" layoutY="790.0" onAction="#conformOrderBtnOnAction" prefHeight="38.0" prefWidth="138.0" styleClass="SaveBtn" text="Place Order" />
+      <JFXButton fx:id="btnPrintBill" layoutX="1263.0" layoutY="790.0" onAction="#btnPrintBillOnAction" prefHeight="38.0" prefWidth="138.0" styleClass="AddBtn" text="Print Bill" />
+      <JFXButton fx:id="btnClose" layoutX="1077.0" layoutY="790.0" onAction="#btnClearOnAction" prefHeight="38.0" prefWidth="138.0" styleClass="CancelBtn" text="Clear" />
+    </children>
+</AnchorPane>

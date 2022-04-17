@@ -1,0 +1,31 @@
+.textPane1 {
+    -fx-background-color: #ced6e0;
+    -fx-background-radius: 25px;
+    -fx-border-color: #2c3e50;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}
+.MPane {
+    -fx-background-color:#ced6e0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.textField {
+    -fx-background-color: #ced6e0;
+    -fx-prompt-text-fill: #726d6d;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-font-family: "Times New Roman";
+}
+.textLabel {
+    -fx-background-color: #ced6e0;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);
+    -fx-font-size: 14;
+}
+
+.btn {
+    -fx-background-color:linear-gradient(to right,rgba(255, 255, 255,1.0),rgba(235, 59, 90,1.0));
+    -fx-background-radius: 20;
+}

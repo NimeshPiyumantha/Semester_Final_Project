@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoginContext" prefHeight="1040.0" prefWidth="1930.0" styleClass="anchorePane" stylesheets="@../assets/style/ManageForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="370.0" layoutY="135.0" prefHeight="771.0" prefWidth="1190.0" styleClass="anchorePane1">
+         <children>
+            <AnchorPane layoutX="43.0" layoutY="50.0" prefHeight="673.0" prefWidth="1104.0" styleClass="MPaneA">
+               <children>
+                  <ImageView fx:id="imgAdmin" fitHeight="178.0" fitWidth="178.0" layoutX="846.0" layoutY="141.0" onMouseClicked="#AdminNavigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/icons/manager.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="imgCashier" fitHeight="178.0" fitWidth="178.0" layoutX="846.0" layoutY="330.0" onMouseClicked="#CashierNavigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/icons/cashier.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="lblRestart" alignment="CENTER" layoutX="23.0" layoutY="72.0" prefHeight="17.0" prefWidth="94.0" text="Information">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="41.0" layoutY="18.0" onMouseClicked="#AboutOnAction" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/icons/info.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="490.0" layoutY="53.0" prefHeight="37.0" prefWidth="76.0" text="Date :">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDate" layoutX="566.0" layoutY="53.0" prefHeight="37.0" prefWidth="163.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="748.0" layoutY="53.0" prefHeight="37.0" prefWidth="83.0" text="Time :">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="829.0" layoutY="53.0" prefHeight="37.0" prefWidth="195.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="543.0" prefHeight="30.0" prefWidth="671.0" text="Welcome To SunBakery System" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDescription" alignment="CENTER" layoutX="159.0" layoutY="580.0" prefHeight="16.0" prefWidth="577.0" text="Please select one of above main operations to proceed">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="159.0" layoutY="141.0" prefHeight="377.0" prefWidth="577.0" style="-fx-border-color: #eb3b5a; -fx-border-width: 3; -fx-border-radius: 20;">
+                     <children>
+                        <AnchorPane fx:id="AnchorePanLogin" layoutX="12.0" layoutY="22.0" prefHeight="333.0" prefWidth="553.0">
+                           <children>
+                              <ImageView fitHeight="333.0" fitWidth="553.0" opacity="0.29" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../assets/images/bread.gif" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#e8e0e0" layoutX="648.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;" wrappingWidth="43.37890625">
+                     <font>
+                        <Font name="Arial Unicode MS" size="73.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="80.0" layoutY="734.0" styleClass="text" text="Version 2022.0.0.1" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="628.0" layoutY="731.0" prefHeight="26.0" prefWidth="479.0" styleClass="text" text="© 2022  All Right Reserved Design By Nimesh Piyumantha" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="49.0" prefWidth="1930.0" styleClass="anchorPane3">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="1880.0" layoutY="11.0" onMouseClicked="#BtnCloseOnAction" pickOnBounds="true" preserveRatio="true" styleClass="btn1">
+               <image>
+                  <Image url="@../assets/icons/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="1841.0" layoutY="12.0" onMouseClicked="#BtnRestoreDownOnAction" pickOnBounds="true" preserveRatio="true" styleClass="btn1">
+               <image>
+                  <Image url="@../assets/icons/maximize.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="1803.0" layoutY="12.0" onMouseClicked="#BtnMinimizeOnAction" pickOnBounds="true" preserveRatio="true" styleClass="btn1">
+               <image>
+                  <Image url="@../assets/icons/minimize.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="812.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUNRISE BAKERY System " wrappingWidth="305.0537109375">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
