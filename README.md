@@ -8,6 +8,7 @@ This is the semester final project.
 * MySql
 ### - Used MVC Architecture
 #### © 2022  All Right Reserved Design By Nimesh Piyumantha
+#### Contact me : nimeshpiyumantha11@gmail.com
 ![alt text](https://github.com/NimeshPiyumantha/Semester_Final_Project/blob/5f950b82cabd7eb6e3e3bebd2672bd21faf03a3b/SunriseBakery/UI/Screenshot%20(41).png)
 ![alt text](https://github.com/NimeshPiyumantha/Semester_Final_Project/blob/5f950b82cabd7eb6e3e3bebd2672bd21faf03a3b/SunriseBakery/UI/Screenshot%20(42).png)
 ![alt text](https://github.com/NimeshPiyumantha/Semester_Final_Project/blob/5f950b82cabd7eb6e3e3bebd2672bd21faf03a3b/SunriseBakery/UI/Screenshot%20(43).png)
