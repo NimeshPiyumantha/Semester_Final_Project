@@ -46,11 +46,8 @@ public class AdminFormController implements Initializable {
     }
 
     public void LoginOnAction(ActionEvent actionEvent) throws IOException, SQLException {
-        UILoader.LoginOnAction(AdminContext, "AdminDashBoardForm");
-        NotificationController.LoginSuccessfulNotification("Admin");
-
         //--------------------------------UI Login Admin form in Database-------------------------------//
-      /*  Connection con = null;
+        Connection con = null;
         try {
             con = DBConnection.getInstance().getConnection();
         } catch (SQLException | ClassNotFoundException e) {
@@ -81,7 +78,7 @@ public class AdminFormController implements Initializable {
                 imgLock.setVisible(true);
                 NotificationController.EmptyDataNotification("Account is Temporarily Disabled or You Did not Sign in Correctly.");
             }
-        }*/
+        }
     }
 
     //------Show Password-----
